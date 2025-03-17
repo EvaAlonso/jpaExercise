@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "tarjeta_grafica")
-public class tarjetaGrafica {
+public class TarjetaGrafica {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,10 +13,10 @@ public class tarjetaGrafica {
     @Column(name = "name")
     private String name;
 
-    public tarjetaGrafica() {
+    public TarjetaGrafica() {
     }
 
-    public tarjetaGrafica(int id, String name) {
+    public TarjetaGrafica(int id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -39,7 +39,7 @@ public class tarjetaGrafica {
 
     @Override
     public String toString() {
-        return "tarjetaGrafica{" +
+        return "TarjetaGrafica{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
