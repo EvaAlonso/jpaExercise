@@ -24,9 +24,7 @@ public class TarjetaGraficaDAOImplements implements TarjetaGraficaDAO{
         this.entityManager.persist(theTarjetaGrafica);
     }
 
-    public TarjetaGrafica findById(int id){
-        return this.entityManager.find(TarjetaGrafica.class, id);
-    }
+
     @Override
     public TarjetaGrafica findById(Integer id) {
         return this.entityManager.find(TarjetaGrafica.class, id);
