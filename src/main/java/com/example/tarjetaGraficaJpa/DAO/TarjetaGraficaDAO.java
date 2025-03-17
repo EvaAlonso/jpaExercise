@@ -11,6 +11,8 @@ public interface TarjetaGraficaDAO {
     TarjetaGrafica findById(Integer id);
 
     List<TarjetaGrafica> findAll();
+    void update (TarjetaGrafica tarjetaGrafica);
+    void delete (TarjetaGrafica tarjetaGrafica);
 
 
 }
