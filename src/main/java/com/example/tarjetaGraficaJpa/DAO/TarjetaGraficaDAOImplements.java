@@ -37,6 +37,7 @@ public class TarjetaGraficaDAOImplements implements TarjetaGraficaDAO{
         entityManager.merge(tarjetaGrafica);
     }
 
+
     @Transactional
     public void delete(Integer id) {
 

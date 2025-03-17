@@ -12,7 +12,7 @@ public interface TarjetaGraficaDAO {
 
     List<TarjetaGrafica> findAll();
     void update (TarjetaGrafica tarjetaGrafica);
-    void delete (TarjetaGrafica tarjetaGrafica);
+    void delete (Integer id);
 
 
 }
