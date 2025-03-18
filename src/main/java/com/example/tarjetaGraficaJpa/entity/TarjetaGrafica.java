@@ -13,17 +13,17 @@ public class TarjetaGrafica {
     @Column(name = "name")
     private String name;
     private String manufacturer;
+    private int memory;
 
     public TarjetaGrafica() {
     }
 
 
-
-
-    public TarjetaGrafica(int id, String name, String manufacturer) {
+    public TarjetaGrafica(int id, String name, String manufacturer, int memory) {
         this.id = id;
         this.name = name;
         this.manufacturer = manufacturer;
+        this.memory = memory;
 
     }
 
@@ -51,12 +51,21 @@ public class TarjetaGrafica {
         this.manufacturer = manufacturer;
     }
 
+    public float getMemory() {
+        return memory;
+    }
+
+    public void setMemory(int memory) {
+        this.memory = memory;
+    }
+
     @Override
     public String toString() {
         return "TarjetaGrafica{" +
                 "id=" + id +
                 ", name='" + name +
-                ", manufacturer=" + manufacturer +
+                ", manufacturer='" + manufacturer +
+                ", memory='" + memory + "GB" +
                 '}';
     }
 }
