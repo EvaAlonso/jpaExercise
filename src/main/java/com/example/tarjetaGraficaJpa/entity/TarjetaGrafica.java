@@ -12,13 +12,19 @@ public class TarjetaGrafica {
     private int id;
     @Column(name = "name")
     private String name;
+    private String manufacturer;
 
     public TarjetaGrafica() {
     }
 
-    public TarjetaGrafica(int id, String name) {
+
+
+
+    public TarjetaGrafica(int id, String name, String manufacturer) {
         this.id = id;
         this.name = name;
+        this.manufacturer = manufacturer;
+
     }
 
     public int getId() {
@@ -37,11 +43,20 @@ public class TarjetaGrafica {
         this.name = name;
     }
 
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
     @Override
     public String toString() {
         return "TarjetaGrafica{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + name +
+                ", manufacturer=" + manufacturer +
                 '}';
     }
 }
